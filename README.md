@@ -15,3 +15,16 @@ One thing that was surprising was that I would need to know the location-specifi
 I'm going to be using a GPU on AWS for training my code. That means I'll create local port forwarding over SSH to connect port 8888 to a P2 instance that is ideal for building a deep learning module. In order to use a P2 instance, a limit increase must be setup. That's been done with [Case ID 6728534471](https://console.aws.amazon.com/support/cases#/6728534471/en).
 
 As I work through more of the Terraform documentation, I'll keep this in mind so I know how to store/use/lookup whatever I need.
+
+## Dependencies
+
+I created a separate directory for the dependencies, because I wanted to compare and think about things. This is not normal practice. Git is enough for that. Also, the `terraform init` command must be called in the new directory, which brings down a binary file for the provider. For AWS, that's 158M. Also, this confirms that I was right to ignore the `.terraform` directory in git.
+
+There was an error setting up the Elastic IP address, which I think is tied to the permissions granted a data scientist with the I AM role I used, as that is not what a data scientist typically does. Either way, I destroyed the instances and left a clean slate once I got that far.
+
+## Questions
+
+* How can I stop or hybernate instances from Terraform?
+* How can I interpret state to mean, "all shut down, you can go home now?"
+* How can I integrate cost management and limitations with my practice?
+

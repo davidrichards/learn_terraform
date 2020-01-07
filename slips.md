@@ -28,4 +28,13 @@ By changing the configuration, Terraform can change the underlying instance. By 
 
 Hashicorp. (n.d.). Build Infrastructure | Terraform—HashiCorp Learn. Retrieved January 7, 2020, from https://learn.hashicorp.com/terraform/getting-started/build
 
+By creating a second resource, I can create a dependency between resources. In this case it's an Elastic IP address. Terraform is inferring when a resource depends on another with the aws_instance.example.id implicit dependency. This creates the order to create the resources. This is the primary way to setup relationships, by inferrence, but if something isn't clear, the `depends_on` argument can be supplied to a resource to create an explicit dependency. One way this could be done would be if an S3 bucket is a dependency, but that is setup inside the code.
+
+We can also add non-dependent resources as usual.
+
+Hashicorp. (n.d.). Resource Dependencies | Terraform—HashiCorp Learn. Retrieved January 7, 2020, from https://learn.hashicorp.com/terraform/getting-started/dependencies
+
+[TODO: work through Elastic IP Address]
+
+AWS. (n.d.). Elastic IP Addresses—Amazon Elastic Compute Cloud. Retrieved January 7, 2020, from https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html
 
