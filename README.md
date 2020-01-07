@@ -1,6 +1,6 @@
 # Learn Terraform
 
-This sets up Terraform, takes temporary slip notes, and allows me to experiment with the system.
+This sets up Terraform, takes temporary slip notes, and allows me to experiment with the system while I [work through the documentation](https://learn.hashicorp.com/terraform) and setup [the data lab](https://github.com/davidrichards/data_lab).
 
 ## Setup Instance
 
