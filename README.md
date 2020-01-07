@@ -12,6 +12,6 @@ One thing that was surprising was that I would need to know the location-specifi
 
 ## ML Plan
 
-I'm going to be using a GPU on AWS for training my code. That means I'll create local port forwarding over SSH to connect port 8888 to a P2 instance that is ideal for building a deep learning module. In order to use a P2 instance, a limit increase must be setup. That's been done with Case ID 6728534471.
+I'm going to be using a GPU on AWS for training my code. That means I'll create local port forwarding over SSH to connect port 8888 to a P2 instance that is ideal for building a deep learning module. In order to use a P2 instance, a limit increase must be setup. That's been done with [Case ID 6728534471](https://console.aws.amazon.com/support/cases#/6728534471/en).
 
 As I work through more of the Terraform documentation, I'll keep this in mind so I know how to store/use/lookup whatever I need.
