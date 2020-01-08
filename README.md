@@ -16,6 +16,8 @@ I'm going to be using a GPU on AWS for training my code. That means I'll create 
 
 As I work through more of the Terraform documentation, I'll keep this in mind so I know how to store/use/lookup whatever I need.
 
+I made a mistake, and need to get P instances in us-west-2 instead of us-west-1. They gave me the resources, but in the region I asked for, the wrong region. The new case is [6730418791](https://console.aws.amazon.com/support/cases#/6730418791/en).
+
 ## Dependencies
 
 I created a separate directory for the dependencies, because I wanted to compare and think about things. This is not normal practice. Git is enough for that. Also, the `terraform init` command must be called in the new directory, which brings down a binary file for the provider. For AWS, that's 158M. Also, this confirms that I was right to ignore the `.terraform` directory in git.
